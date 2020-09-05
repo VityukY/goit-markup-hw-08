@@ -1,0 +1,31 @@
+
+/*наша команда*/
+.team {
+	background-color: #f5f4fa;
+	padding-top: 94px;
+	padding-bottom: 94px;
+
+
+/*команда заголовок*/
+ .title {
+	margin-bottom: 50px;
+	text-align: center;
+ }
+/*список учасников*/
+ .list {
+	display: flex;
+	text-align: center;
+ }
+ .team-img {
+	display: block;
+ }
+
+ .item {
+	background-color: white;
+	max-height: 428px;
+	padding-bottom: 30px;
+  &:not(:last-child) {
+	margin-right: 30px;
+  }
+ }
+}

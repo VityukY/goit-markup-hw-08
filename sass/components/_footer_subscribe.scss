@@ -1,0 +1,43 @@
+/*ФУТР ПОДПИСАТСЯ*/
+.subscribe {
+	color: $text-white-color;
+ b {
+	display: block;
+	margin-bottom: 10px;
+ }
+ .form-field {
+	margin-right: 12px;
+	margin-bottom: 0px;
+ }
+ input {
+	width: 358px;
+	height: 50px;
+	background-color: #2f303a;
+	margin-bottom: 0px;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	border-radius: 4px;
+	padding: 15px 16px;
+	color: $text-white-color;
+
+  &:focus {
+	border: 1px solid rgba(255, 255, 255, 0.3);}
+ }
+ .subs {
+	width: 200px;
+	height: 50px;
+ }
+ .subscribe-inbox {
+	display: flex;
+ }
+ .button {
+	display: flex;
+	justify-content: center;
+
+ &:hover {
+	background-color: #188ce8;
+	color: $text-white-color;}
+ }
+
+ span {
+	margin-right: 10px;}
+}

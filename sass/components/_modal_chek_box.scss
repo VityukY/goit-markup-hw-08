@@ -1,0 +1,30 @@
+
+
+.modal .chek {
+	display: flex;
+	align-items: center;
+
+	font-family: Roboto;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.71;
+	color: $secondary-text-color;
+	text-decoration: none;
+}
+
+.modal .icon-chek {
+	border: 1px solid $secondary-text-color;
+	margin-right: 7px;
+	border-radius: 2px;
+}
+.modal a {
+	color: $acent-text-color;
+}
+.chek .chek-input {
+	appearance: none;
+}
+.modal .chek-input:checked + .icon-chek {
+	background: #2196f3;
+	border: 1px solid $acent-text-color;
+	border-radius: 2px;
+}

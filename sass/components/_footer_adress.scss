@@ -1,0 +1,30 @@
+
+/*футре - столбец адресов*/
+.footer {
+ .input-conteiner {
+	display: block;
+	width: 270px;
+ }
+ .logo {
+	display: block;
+	margin-bottom: 20px;
+
+	color: $text-white-color;
+	text-decoration: none;
+ }
+ .contact {
+	color: $secondary-text-color;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.71;
+	text-decoration: none;
+ }
+ .adress {
+	color: $text-white-color;
+	display: flex;
+	margin-bottom: 9px;}
+ .phone {
+	display: flex;
+	margin-bottom: 9px;}
+}
