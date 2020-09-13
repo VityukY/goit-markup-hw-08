@@ -28,7 +28,7 @@
 
 @media screen and (min-width: 480px){
 	.footer{
-		width: 480px;
+
 		.contact-info{
 			display: flex;
 			flex-direction: column;
@@ -41,9 +41,7 @@
 
 @media screen and (min-width: 768px){
 	.footer{
-		margin-left: auto;
-		margin-right: auto;
-		width: 768px;
+
 	}
 	
 }
@@ -51,11 +49,7 @@
 	
 /*футре - столбец адресов*/
 .footer {
-	margin-left: auto;
-	margin-right: auto;
-	width: 1200px;
-	.contact-info {
-		
+	.contact-info {		
 	   display: block;
 	   margin-right:80px ;
 	}

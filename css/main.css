@@ -726,7 +726,7 @@ li {
 }
 
 @media screen and (min-width: 480px) {
-  .team {
+  .team .conteiners {
     margin-right: auto;
     margin-left: auto;
     width: 480px;
@@ -750,7 +750,7 @@ li {
 }
 
 @media screen and (min-width: 768px) {
-  .team {
+  .team .conteiners {
     width: 768px;
   }
   .team .list {
@@ -774,6 +774,8 @@ li {
 @media screen and (min-width: 1200px) {
   .team {
     padding-top: 94px;
+  }
+  .team .conteiners {
     width: 1200px;
   }
   .team .title {
@@ -948,13 +950,12 @@ li {
 }
 
 .footer {
-  width: 100%;
   padding-top: 60px;
   background-color: #2f303a;
 }
 
 @media screen and (min-width: 480px) {
-  .footer {
+  .footer .conteiners {
     width: 480px;
     margin-right: auto;
     margin-left: auto;
@@ -962,10 +963,8 @@ li {
 }
 
 @media screen and (min-width: 768px) {
-  .footer {
+  .footer .conteiners {
     width: 768px;
-    margin-right: auto;
-    margin-left: auto;
   }
 }
 
@@ -973,11 +972,9 @@ li {
   /*футер*/
   .footer {
     height: 252px;
-    margin-right: auto;
-    margin-left: auto;
-    width: 1200px;
   }
   .footer .conteiners {
+    width: 1200px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1016,9 +1013,6 @@ li {
 }
 
 @media screen and (min-width: 480px) {
-  .footer {
-    width: 480px;
-  }
   .footer .contact-info {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1034,21 +1028,8 @@ li {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .footer {
-    margin-left: auto;
-    margin-right: auto;
-    width: 768px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   /*футре - столбец адресов*/
-  .footer {
-    margin-left: auto;
-    margin-right: auto;
-    width: 1200px;
-  }
   .footer .contact-info {
     display: block;
     margin-right: 80px;
