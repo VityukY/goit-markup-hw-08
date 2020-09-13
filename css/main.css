@@ -613,6 +613,8 @@ li {
 
 @media screen and (min-width: 1200px) {
   .features {
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 94px;
     width: 1200px;
   }
@@ -622,6 +624,8 @@ li {
     display: flex;
     margin: -15px;
     width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .features .item {
     width: calc((100% - 4 * 30px) / 4);
@@ -1282,6 +1286,8 @@ li {
     width: 480px;
     padding-top: 60px;
     padding-bottom: 40px;
+    margin-right: auto;
+    margin-left: auto;
   }
   .filters .list {
     -ms-flex-wrap: wrap;
@@ -1298,8 +1304,6 @@ li {
     width: 768px;
     padding-top: 66px;
     padding-bottom: 30ppx;
-    margin-right: auto;
-    margin-left: auto;
   }
   .filters .list {
     -webkit-box-pack: center;
@@ -1313,10 +1317,6 @@ li {
   .filters {
     padding-top: 94px;
     padding-bottom: 50px;
-  }
-  .filters .conteiners {
-    margin-right: auto;
-    margin-left: auto;
     width: 1200px;
   }
   .filters .list {
@@ -1324,11 +1324,6 @@ li {
         -ms-flex-align: center;
             align-items: center;
   }
-}
-
-.projects {
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .projects .item {
@@ -1413,6 +1408,11 @@ li {
 }
 
 @media screen and (min-width: 480px) {
+  .projects {
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .projects .item {
     margin-bottom: 30px;
   }
@@ -1423,8 +1423,6 @@ li {
 
 @media screen and (min-width: 768px) {
   .projects {
-    margin-right: auto;
-    margin-left: auto;
     width: 768px;
   }
   .projects .list {
@@ -1444,8 +1442,6 @@ li {
 
 @media screen and (min-width: 1200px) {
   .projects {
-    margin-right: auto;
-    margin-left: auto;
     width: 1200px;
     padding-bottom: 94px;
   }

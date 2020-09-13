@@ -36,6 +36,10 @@
 		width: 480px;
 		padding-top: 60px;
 		padding-bottom: 40px;
+		margin-right: auto;
+		margin-left: auto;
+		
+
 	 .list {
 		flex-wrap: wrap;}
 	 .item {
@@ -49,8 +53,7 @@
 		width: 768px;
 		padding-top: 66px;
 		padding-bottom: 30ppx;
-		margin-right: auto;
-		margin-left: auto;
+
 	 .list {
 		justify-content: center;}
 	}
@@ -60,12 +63,9 @@
 	.filters {
 		padding-top: 94px;
 		padding-bottom: 50px;
-		.conteiners{
-			margin-right: auto;
-			margin-left: auto;
-			width: 1200px;
 
-		}
+		width: 1200px;
+
 
 	 .list {
 		align-items: center;

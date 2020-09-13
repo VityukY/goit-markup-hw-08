@@ -46,7 +46,6 @@
 	.features{
 		width: 768px;
 
-
 		padding-top: 60px;
 		.list {
 			margin:-15px;
@@ -67,26 +66,24 @@
 @media screen and (min-width: 1200px){
 
 .features {
-
+	margin-left: auto;
+	margin-right: auto;
 	padding-top: 94px; 
-
 	width: 1200px;
-
  	.list {
-	display: flex;
-	margin:-15px;
-	width: 1200px;
-
+		display: flex;
+		margin:-15px;
+		width: 1200px;
+		margin-left: auto;
+		margin-right: auto;
  	}
-
  	.item {
-	width: calc((100% - 4 * 30px) / 4);
+		width: calc((100% - 4 * 30px) / 4);
  	 }
  	}
- .icon-conter {
-	width: calc((100% - 4 * 30px) / 4);
-
- }
+ 	.icon-conter {
+		width: calc((100% - 4 * 30px) / 4);
+	 }
 
 } 
 	
