@@ -1,65 +1,75 @@
-/*навиационная панель вся */
+
+@media screen and (min-width: 480px){
+
+}
+@media screen and (min-width: 768px){
+	
+}
+@media screen and (min-width: 1200px){
+	/*навиационная панель вся */
 
 .site-nav {
- .conteiners {
-	display: flex;
-	align-items: center;
- }
-
-/* навиационная панель - логотип */
- .logo {
-	display: block;
-	color: $main-text-color;
-	font-weight: 700;
-	padding-top: 24px;
-	padding-bottom: 25px;
- }
-/*навиационная панель - навигация контактов*/
- .contact {
-	color: $secondary-text-color;
- }
-
- .contacts {
-	margin-left: auto;
- }
- .list {
-	display: flex;
- }
-}
-.item-contact .contact-icon {
-	margin-right: 10px;
-	fill: currentColor;
-}
-
-/* навиационная панель - навигация сайта*/
-
-.site-nav{
- .item { 
-  &:first-child {
-	margin-left: 85px;
-  }
-  &:not(:last-child){
-	margin-right: 50px;
-  }
-  &-contact:not(:last-child) {
-	margin-right: 30px;
-  }
- }
-}
-
-.site-nav .link {
-	display: block;
-	padding-top: 32px;
-	padding-bottom: 32px;
-	font-style: normal;
-	font-weight: 500;
-	font-size: 14px;
-	line-height: 1.14;
-	letter-spacing: 0.02em;
-	transition: color 250ms $timeline;
-
- &:hover,
- &:focus {
-	color: $acent-text-color;
- }
+	.conteiners {
+	   display: flex;
+	   align-items: center;
+	}
+   
+   /* навиационная панель - логотип */
+	.logo {
+	   display: block;
+	   color: $main-text-color;
+	   font-weight: 700;
+	   padding-top: 24px;
+	   padding-bottom: 25px;
+	}
+   /*навиационная панель - навигация контактов*/
+	.contact {
+	   color: $secondary-text-color;
+	}
+   
+	.contacts {
+	   margin-left: auto;
+	}
+	.list {
+	   display: flex;
+	}
+   }
+   .item-contact .contact-icon {
+	   margin-right: 10px;
+	   fill: currentColor;
+   }
+   
+   /* навиационная панель - навигация сайта*/
+   
+   .site-nav{
+	.item { 
+	 &:first-child {
+	   margin-left: 85px;
+	 }
+	 &:not(:last-child){
+	   margin-right: 50px;
+	 }
+	 &-contact:not(:last-child) {
+	   margin-right: 30px;
+	 }
+	}
+   }
+   
+   .site-nav .link {
+	   display: block;
+	   padding-top: 32px;
+	   padding-bottom: 32px;
+	   font-style: normal;
+	   font-weight: 500;
+	   font-size: 14px;
+	   line-height: 1.14;
+	   letter-spacing: 0.02em;
+	   transition: color 250ms $timeline;
+   
+	&:hover,
+	&:focus {
+	   color: $acent-text-color;
+	}
+   }
+	
 }

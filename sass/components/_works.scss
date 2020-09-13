@@ -1,5 +1,14 @@
-/*чем мы занимаемся*/
+.work{
+	display: none
+	;
+}
+
+
+
+@media screen and (min-width: 1200px){
+	/*чем мы занимаемся*/
 .work {
+	display: block;
 	padding-top: 94px;
 	padding-bottom: 94px;
 
@@ -42,4 +51,6 @@
 	margin-right: 30px;
   }	
  }
+}
+	
 }
