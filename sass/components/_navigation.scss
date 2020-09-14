@@ -150,7 +150,12 @@
 	}
 	.link{
 		padding-top: 32px;
-		padding-bottom: 32px;}
+		padding-bottom: 32px;
+		&:hover,
+		&:focus {
+		   color: $acent-text-color;
+		}
+	}
 
 	.list{
 		&.contacts{
@@ -185,12 +190,4 @@
 
    }
 
- 
-   /* навиационная панель - навигация сайта*/
-   
-   .site-nav{
-
-   }
-
-	
 }

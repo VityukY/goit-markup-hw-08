@@ -621,6 +621,9 @@ li {
     padding-top: 32px;
     padding-bottom: 32px;
   }
+  .site-nav .link:hover, .site-nav .link:focus {
+    color: #2196f3;
+  }
   .site-nav .list.contacts {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -647,7 +650,6 @@ li {
     margin-right: 10px;
     fill: currentColor;
   }
-  /* навиационная панель - навигация сайта*/
 }
 
 .hero {
