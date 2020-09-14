@@ -453,6 +453,14 @@ li {
   border-radius: 2px;
 }
 
+.site-nav .item-contact a {
+  color: #757575;
+}
+
+.site-nav .logo {
+  color: black;
+}
+
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .site-nav {
     position: relative;
@@ -467,10 +475,13 @@ li {
             justify-content: center;
     padding-top: 10px;
   }
-  .site-nav .conteiners a {
+  .site-nav .conteiners .mobile-menu a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .site-nav .mobile-nav {
     position: absolute;
@@ -535,16 +546,17 @@ li {
   .site-nav .conteiners {
     width: 768px;
     padding-top: 21px;
-    margin-bottom: 21px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .site-nav .conteiners a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    color: black;
   }
   .site-nav .mobile-nav {
     display: none;
@@ -565,8 +577,11 @@ li {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  .site-nav .list.contacts {
+  .site-nav .contacts {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -577,6 +592,12 @@ li {
     font-weight: 500;
     font-size: 12px;
     line-height: 1.16;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     letter-spacing: 0.02em;
   }
   .site-nav .logo {
@@ -630,6 +651,12 @@ li {
         -ms-flex-direction: row;
             flex-direction: row;
     margin-left: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .site-nav .list.pages .item {
     margin-right: 50px;
@@ -1204,6 +1231,21 @@ li {
         -ms-flex-align: center;
             align-items: center;
     margin-bottom: 60px;
+  }
+  .footer .contact-info address {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 

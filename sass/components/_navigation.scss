@@ -1,13 +1,27 @@
+.site-nav{
+	.item-contact a{
+		color: #757575;
+	}
+	.logo{
+		color: black;
 
+	}
+}
 @media screen and (min-width: 480px) and (max-width: 767px) {
 	.site-nav{
+
+
+
 		.conteiners{
 			width: 480px;
 			margin-left: auto;
 			margin-right: auto;
 			justify-content: center;
 			padding-top: 10px;
-			a{display: flex;}
+			.mobile-menu a {
+			display: flex;
+			justify-content: center;
+			}
 
 		}
 		position: relative;
@@ -63,6 +77,8 @@
 
 			}
 		}
+
+
 	}
  
 }
@@ -70,11 +86,12 @@
 	.site-nav{
 		.conteiners{
 			a{display: flex;
-			color: black;}
+			}
 			width:768px ;
 			padding-top: 21px;
-			margin-bottom: 21px;
-			display: flex;}
+
+			display: flex;
+		align-items: center;}
 
 		.mobile-nav{
 			display: none;
@@ -88,20 +105,19 @@
 		}
 		.list{
 			display: flex;
-			&.contacts{
-				flex-direction: column;
-				margin-left: 84px;
-				font-family: Roboto,sans-serif;
-				font-style: 400;
-				font-weight: 500;
-				font-size: 12px;
-				line-height: 1.16;
-
-
-				letter-spacing: 0.02em;
-			}
-			&.pages{
-			}
+			align-items: center;
+		}
+		.contacts{
+			flex-direction: column;
+			margin-left: 84px;
+			font-family: Roboto,sans-serif;
+			font-style: 400;
+			font-weight: 500;
+			font-size: 12px;
+			line-height: 1.16;
+			align-items: center;
+			justify-content: center;
+			letter-spacing: 0.02em;
 		}
 		.logo {
 			margin-right: 88px;
@@ -161,6 +177,8 @@
 		&.contacts{
 			flex-direction: row;
 			margin-left: auto;
+			justify-content: center;
+			align-items: center;
 		}
 		&.pages{
 			.item{
