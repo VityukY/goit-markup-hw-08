@@ -6,8 +6,15 @@
 	padding-bottom: 60px;
 
 	.title {
-		margin-bottom: 30px;
+		font-family: Roboto,sans-serif;
+
+		font-weight: 700;
+		font-size: 28px;
+		line-height: 1.178;
 		text-align: center;
+
+		margin-bottom: 30px;
+
 	 }
 	 .team-img {
 		display: block;
@@ -83,11 +90,13 @@
 	padding-top: 94px; 
 
 	.conteiners{
-	width: 1200px;
+		width: 1200px;
 	}
 	
 	.title {
-	margin-bottom: 50px;
+		margin-bottom: 50px;
+		font-size: 36px;
+		line-height: 1.16;
 	}
 
 	.list {

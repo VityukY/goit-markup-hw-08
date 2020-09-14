@@ -476,6 +476,7 @@ li {
     position: absolute;
     top: 10px;
     right: 15px;
+    z-index: 999;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -649,33 +650,58 @@ li {
   /* навиационная панель - навигация сайта*/
 }
 
+.hero {
+  max-width: 1600px;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.8))), url(../img-origin/Header-optimize.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.8)), url(../img-origin/Header-optimize.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+
+.hero .title {
+  max-width: 696px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.615;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 480px) {
+  .hero {
+    max-width: 767px;
+    height: 400px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    max-width: 1199px;
+    height: 400px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .hero {
-    max-width: 1600px;
-    min-height: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.8))), url(../img-origin/Header-optimize.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.8)), url(../img-origin/Header-optimize.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    text-align: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
-  }
-  .hero .title {
-    max-width: 696px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 30px;
-    color: #ffffff;
-    font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
+    min-height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
+    height: 600px;
   }
 }
 
@@ -701,6 +727,7 @@ li {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .features .post {
@@ -741,6 +768,9 @@ li {
   .features .item {
     width: calc((100% - 2 * 30px) / 2);
     margin: 15px;
+  }
+  .features .sub-title {
+    text-align: start;
   }
 }
 
@@ -832,8 +862,12 @@ li {
 }
 
 .team .title {
-  margin-bottom: 30px;
+  font-family: Roboto,sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.178;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 .team .team-img {
@@ -913,6 +947,8 @@ li {
   }
   .team .title {
     margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16;
   }
   .team .list {
     width: 1200px;
@@ -1000,6 +1036,9 @@ li {
 .client .title {
   text-align: center;
   margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.178;
 }
 
 .client .list {
@@ -1076,6 +1115,8 @@ li {
   }
   .client .title {
     margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16;
   }
   .client .list-item {
     width: calc((100% - 6 * 30px) / 6);
@@ -1117,6 +1158,9 @@ li {
 .footer .logo {
   display: block;
   margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.166;
   color: #ffffff;
   text-decoration: none;
 }
@@ -1163,6 +1207,10 @@ li {
 
 @media screen and (min-width: 1200px) {
   /*футре - столбец адресов*/
+  .footer .logo {
+    font-size: 26px;
+    line-height: 1.192;
+  }
   .footer .contact-info {
     display: block;
     margin-right: 80px;

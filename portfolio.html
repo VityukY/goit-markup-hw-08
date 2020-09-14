@@ -13,39 +13,53 @@
 
 	<body>
 		<!--основная навигация/шапка-->
-		<header class="portfolio-border">
+		<header>
 			<nav class="site-nav">
 				<div class="conteiners">
 					<a href="./index.html" class="logo">
 						<span>Web</span>
 						Studio
 					</a>
-					<ul class="list">
-						<li class="item"><a href="./index.html" class="link">Студия</a></li>
-						<li class="item"><a href="./portfolio.html" class="link current-page">Портфолио</a></li>
-						<li class="item"><a href="" class="link">Контакты</a></li>
-					</ul>
-					<ul class="list contacts">
-						<li class="item-contact">
-							<a href="mailto:info@devstudio.com" class="link contact">
-								<svg width="16" height="11" class="contact-icon">
-									<use href="./img-origin/symbol-defs-optimize.svg#icon-envelope"></use>
-								</svg>
-								info@devstudio.com
-							</a>
-						</li>
-						<li class="item-contact">
-							<a href="tel:+380961111111" class="link contact">
-								<svg width="10" height="15" class="contact-icon">
-									<use href="./img-origin/symbol-defs-optimize.svg#icon-phone"></use>
-								</svg>
-								+38 096 111 11 11
-							</a>
-						</li>
-					</ul>
+					<div class="mobile-menu is-open" id="mobile-menu" data-menu>
+						<ul class="list pages">
+							<li class="item"><a href="./index.html" class="link">Студия</a></li>
+							
+							<li class="item"><a href="./portfolio.html" class="link current-page">Портфолио</a></li>
+							<li class="item"><a href="" class="link">Контакты</a></li>
+						</ul>
+						<ul class="list contacts">
+							<li class="item-contact">
+								<a href="mailto:info@devstudio.com" class="link contact">
+									<svg width="16" height="11" class="contact-icon">
+										<use href="./img-origin/symbol-defs-optimize.svg#icon-envelope"></use>
+									</svg>
+									info@devstudio.com
+								</a>
+							</li>
+							<li class="item-contact">
+								<a href="tel:+380961111111" class="link contact">
+									<svg width="10" height="15" class="contact-icon">
+										<use href="./img-origin/symbol-defs-optimize.svg#icon-phone"></use>
+									</svg>
+									+38 096 111 11 11
+								</a>
+							</li>
+						</ul>
+					</div>
 				</div>
+				<button type="button"
+				class="mobile-nav is-open"
+				aria-expanded="false"
+				data-menu-button
+				aria-controls="mobile-menu">
+				   <svg width="40" height="40"  aria-label="Переключатель мобильного меню" >
+					   <use class="icon-menu" href="./img-origin/symbol-defs-optimize.svg#icon-icon-menu"></use>
+					   <use class="icon-cross" href="./img-origin/symbol-defs-optimize.svg#icon-icon-cross"></use>
+				   </svg>
+
+			   </button>
 			</nav>
-		</header> 
+		</header>
 		<main>
 			<section class="filters">
 				<div class="conteiners">
@@ -76,7 +90,10 @@
 						<li class="item">
 							<a href="">
 								<div class="thumb">
-									<img src="./img-origin/project-1.jpg" alt="ноутбук" class="project-img" />
+									<img 
+									srcset="./img-origin/project1х1.jpg 1x, ./img-origin/project1х2.jpg 2x"
+									src="./img-origin/project1х1.jpg"
+									 alt="ноутбук" class="project-img" />
 									<p class="description">
 										Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
 										для цифрового шпионажа и атак на защищённые сервера конкурентов.
@@ -91,7 +108,10 @@
 						<li class="item">
 							<a href="">
 								<div class="thumb">
-									<img src="./img-origin/project-2.jpg" alt="ноутбук" class="project-img" />
+									<img
+									srcset="./img-origin/project2х1.jpg 1x, ./img-origin/project2х2.jpg 2x"
+									src="./img-origin/project2х1.jpg"
+									 alt="ноутбук" class="project-img" />
 									<p class="description">
 										Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
 										для цифрового шпионажа и атак на защищённые сервера конкурентов.
@@ -106,7 +126,10 @@
 						<li class="item">
 							<a href="">
 								<div class="thumb">
-									<img src="./img-origin/project-3.jpg" alt="ноутбук" class="project-img" />
+									<img 
+									srcset="./img-origin/project3х1.jpg 1x, ./img-origin/project3х2.jpg 2x"
+									src="./img-origin/project3х1.jpg"
+									 alt="ноутбук" class="project-img" />
 									<p class="description">
 										Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
 										для цифрового шпионажа и атак на защищённые сервера конкурентов.
@@ -122,7 +145,10 @@
 						<li class="item">
 							<a href="">
 								<div class="thumb">
-									<img src="./img-origin/project-4.jpg" alt="ноутбук" class="project-img" />
+									<img 
+									srcset="./img-origin/project4х1.jpg 1x, ./img-origin/project4х2.jpg 2x"
+									src="./img-origin/project4х1.jpg"
+									 alt="ноутбук" class="project-img" />
 									<p class="description">
 										Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
 										для цифрового шпионажа и атак на защищённые сервера конкурентов.
@@ -137,7 +163,10 @@
 						<li class="item">
 							<a href="">
 								<div class="thumb">
-									<img src="./img-origin/project-5.jpg" alt="ноутбук" class="project-img" />
+									<img 
+									srcset="./img-origin/project5х1.jpg 1x, ./img-origin/project5х2.jpg 2x"
+									src="./img-origin/project5х1.jpg"
+									 alt="ноутбук" class="project-img" />
 									<p class="description">
 										Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
 										для цифрового шпионажа и атак на защищённые сервера конкурентов.
@@ -152,7 +181,8 @@
 						<li class="item">
 							<a href="">
 								<div class="thumb">
-									<img src="./img-origin/project-6.jpg" alt="ноутбук" class="project-img" />
+									<img srcset="./img-origin/project6х1.jpg 1x, ./img-origin/project6х2.jpg 2x"
+									src="./img-origin/project6х1.jpg" alt="ноутбук" class="project-img" />
 									<p class="description">
 										Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
 										для цифрового шпионажа и атак на защищённые сервера конкурентов.
@@ -168,7 +198,10 @@
 						<li class="item">
 							<a href="">
 								<div class="thumb">
-									<img src="./img-origin/project-7.jpg" alt="ноутбук" class="project-img" />
+									<img 
+									srcset="./img-origin/project7х1.jpg 1x, ./img-origin/project7х2.jpg 2x"
+									src="./img-origin/project7х1.jpg"
+									 alt="ноутбук" class="project-img" />
 									<p class="description">
 										Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
 										для цифрового шпионажа и атак на защищённые сервера конкурентов.
@@ -183,7 +216,10 @@
 						<li class="item">
 							<a href="">
 								<div class="thumb">
-									<img src="./img-origin/project-8.jpg" alt="ноутбук" class="project-img" />
+									<img
+									srcset="./img-origin/project8х1.jpg 1x, ./img-origin/project8х2.jpg 2x"
+									src="./img-origin/project8х1.jpg"
+									 alt="ноутбук" class="project-img" />
 									<p class="description">
 										Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
 										для цифрового шпионажа и атак на защищённые сервера конкурентов.
@@ -198,7 +234,10 @@
 						<li class="item">
 							<a href="">
 								<div class="thumb">
-									<img src="./img-origin/project-9.jpg" alt="ноутбук" class="project-img" />
+									<img
+									srcset="./img-origin/project9х1.jpg 1x, ./img-origin/project9х2.jpg 2x"
+									src="./img-origin/project9х1.jpg"
+									 alt="ноутбук" class="project-img" />
 									<p class="description">
 										Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
 										для цифрового шпионажа и атак на защищённые сервера конкурентов.
@@ -282,5 +321,6 @@
 				</div>
 			</div>
 		</footer>
+		<script src="./js/menu.js"></script>
 	</body>
 </html>
