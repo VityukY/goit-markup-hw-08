@@ -1,75 +1,196 @@
 
-@media screen and (min-width: 480px){
+@media screen and (min-width: 480px) and (max-width: 767px) {
+	.site-nav{
+		.conteiners{
+			width: 480px;
+			margin-left: auto;
+			margin-right: auto;
+			justify-content: center;
+			padding-top: 10px;
+			a{display: flex;}
 
+		}
+		position: relative;
+		padding-bottom: 16px;;
+	.mobile-nav{
+		position: absolute;
+		top: 10px;
+		right: 15px;
+
+		display: inline-flex;
+		margin: 0;
+		padding: 0;
+		border: none;
+		background-color: transparent;
+		.icon-cross{
+			display: none;
+		}
+		&.is-open .icon-cross{
+			display: block;
+
+		}
+		&.is-open .icon-menu{
+			display: none;
+
+		}
+	}
+	.mobile-menu{
+		position: absolute;
+		left: 0;
+		top: 100%;
+		width: 100%;
+		height: 393px;
+		padding-top: 60px;
+		margin-bottom: 60px;
+		background-color: white;
+		display: none;
+	
+		&.is-open{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		.contact-icon{
+			margin-right: 10px;
+		}
+		.item-contact:not(:last-child){margin-bottom: 16px;}
+		.pages{
+			.item{			
+				margin-bottom:40px;
+				&:last-child{
+					margin-bottom: 60px;}
+				}
+
+			}
+		}
+	}
+ 
 }
 @media screen and (min-width: 768px){
-	
-}
-@media screen and (min-width: 1200px){
-	/*навиационная панель вся */
+	.site-nav{
+		.conteiners{
+			a{display: flex;
+			color: black;}
+			width:768px ;
+			padding-top: 21px;
+			margin-bottom: 21px;
+			display: flex;}
 
+		.mobile-nav{
+			display: none;
+		}
+		.mobile-menu{
+			width: 100%;
+			display: flex;
+			background-color: transparent;
+			flex-direction: row;
+			height: 80px;
+		}
+		.list{
+			display: flex;
+			&.contacts{
+				flex-direction: column;
+				margin-left: 84px;
+				font-family: Roboto,sans-serif;
+				font-style: 400;
+				font-weight: 500;
+				font-size: 12px;
+				line-height: 1.16;
+
+
+				letter-spacing: 0.02em;
+			}
+			&.pages{
+			}
+		}
+		.logo {
+			margin-right: 88px;
+			font-weight: 700;
+			font-size: 24px;
+			line-height: 1.16;
+			letter-spacing: 0.03em;
+		}
+		.item{
+			font-family: Roboto,sans-serif;
+			font-style: 400;
+			font-size: 14px;
+			line-height: 1.14;
+			letter-spacing: 0.02em;
+			
+			&:not(:last-child) {margin-right: 50px;}
+			&-contact{
+				color: #757575;
+			}
+
+			&-contact:not(:last-child){
+				margin-bottom: 10px;
+
+			}
+		}
+		.item-contact .contact-icon {
+			margin-right: 8px;
+			fill: currentColor;
+	 
+		}
+	 
+		}
+
+	}
+
+
+	
+
+@media screen and (min-width: 1200px){
 .site-nav {
-	.conteiners {
-	   display: flex;
-	   align-items: center;
+	.conteiners{
+		width: 1200px;
+		padding-top: 24px;
+		align-items: center;
+		margin-bottom: 0;
 	}
-   
-   /* навиационная панель - логотип */
+	.link{
+		padding-top: 32px;
+		padding-bottom: 32px;}
+
+	.list{
+		&.contacts{
+			flex-direction: row;
+			margin-left: auto;
+		}
+		&.pages{
+			.item{
+				margin-right: 50px;
+			}
+		}
+	}
 	.logo {
-	   display: block;
-	   color: $main-text-color;
-	   font-weight: 700;
-	   padding-top: 24px;
-	   padding-bottom: 25px;
+		margin-right: 0;
 	}
-   /*навиационная панель - навигация контактов*/
-	.contact {
-	   color: $secondary-text-color;
-	}
-   
-	.contacts {
-	   margin-left: auto;
-	}
-	.list {
-	   display: flex;
-	}
+	.item { 
+		&:first-child {
+		margin-left: 93px;
+		}
+		&:not(:last-child){
+		margin-right: 50px;
+		}
+		&-contact:not(:last-child) {
+		margin-right: 30px;
+		}
+		}	
+
    }
    .item-contact .contact-icon {
 	   margin-right: 10px;
 	   fill: currentColor;
+
    }
-   
+
+ 
    /* навиационная панель - навигация сайта*/
    
    .site-nav{
-	.item { 
-	 &:first-child {
-	   margin-left: 85px;
-	 }
-	 &:not(:last-child){
-	   margin-right: 50px;
-	 }
-	 &-contact:not(:last-child) {
-	   margin-right: 30px;
-	 }
-	}
+
    }
-   
-   .site-nav .link {
-	   display: block;
-	   padding-top: 32px;
-	   padding-bottom: 32px;
-	   font-style: normal;
-	   font-weight: 500;
-	   font-size: 14px;
-	   line-height: 1.14;
-	   letter-spacing: 0.02em;
-	   transition: color 250ms $timeline;
-   
-	&:hover,
-	&:focus {
-	   color: $acent-text-color;
-	}
-   }
+
 	
 }

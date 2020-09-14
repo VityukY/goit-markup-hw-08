@@ -19,31 +19,44 @@
 						<span>Web</span>
 						Studio
 					</a>
-					<ul class="list">
-						<li class="item"><a href="./index.html" class="link current-page">Студия</a></li>
-						
-						<li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
-						<li class="item"><a href="" class="link">Контакты</a></li>
-					</ul>
-					<ul class="list contacts">
-						<li class="item-contact">
-							<a href="mailto:info@devstudio.com" class="link contact">
-								<svg width="16" height="11" class="contact-icon">
-									<use href="./img-origin/symbol-defs-optimize.svg#icon-envelope"></use>
-								</svg>
-								info@devstudio.com
-							</a>
-						</li>
-						<li class="item-contact">
-							<a href="tel:+380961111111" class="link contact">
-								<svg width="10" height="15" class="contact-icon">
-									<use href="./img-origin/symbol-defs-optimize.svg#icon-phone"></use>
-								</svg>
-								+38 096 111 11 11
-							</a>
-						</li>
-					</ul>
+					<div class="mobile-menu is-open" id="mobile-menu" data-menu>
+						<ul class="list pages">
+							<li class="item"><a href="./index.html" class="link current-page">Студия</a></li>
+							
+							<li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
+							<li class="item"><a href="" class="link">Контакты</a></li>
+						</ul>
+						<ul class="list contacts">
+							<li class="item-contact">
+								<a href="mailto:info@devstudio.com" class="link contact">
+									<svg width="16" height="11" class="contact-icon">
+										<use href="./img-origin/symbol-defs-optimize.svg#icon-envelope"></use>
+									</svg>
+									info@devstudio.com
+								</a>
+							</li>
+							<li class="item-contact">
+								<a href="tel:+380961111111" class="link contact">
+									<svg width="10" height="15" class="contact-icon">
+										<use href="./img-origin/symbol-defs-optimize.svg#icon-phone"></use>
+									</svg>
+									+38 096 111 11 11
+								</a>
+							</li>
+						</ul>
+					</div>
 				</div>
+				<button type="button"
+				class="mobile-nav is-open"
+				aria-expanded="false"
+				data-menu-button
+				aria-controls="mobile-menu">
+				   <svg width="40" height="40"  aria-label="Переключатель мобильного меню" >
+					   <use class="icon-menu" href="./img-origin/symbol-defs-optimize.svg#icon-icon-menu"></use>
+					   <use class="icon-cross" href="./img-origin/symbol-defs-optimize.svg#icon-icon-cross"></use>
+				   </svg>
+
+			   </button>
 			</nav>
 		</header>
 		<main>
@@ -474,5 +487,6 @@
 			</div>
 		</div>
 		<script src="./js/modal.js"></script>
+		<script src="./js/menu.js"></script>
 	</body>
 </html>
