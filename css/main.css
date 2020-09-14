@@ -461,10 +461,34 @@ li {
   color: black;
 }
 
+.current-page {
+  position: relative;
+  color: #2196f3;
+}
+
+.current-page::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  content: " ";
+  width: 100%;
+  height: 4px;
+  background: #2196f3;
+  border-radius: 2px;
+}
+
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .site-nav {
     position: relative;
     padding-bottom: 16px;
+  }
+  .site-nav .item-contact .contact-icon {
+    margin-right: 10px;
+    fill: currentColor;
+  }
+  .site-nav .link {
+    padding-bottom: 8px;
   }
   .site-nav .conteiners {
     width: 480px;
@@ -511,7 +535,6 @@ li {
     width: 100%;
     height: 393px;
     padding-top: 60px;
-    margin-bottom: 60px;
     background-color: white;
     display: none;
     z-index: 999;
@@ -534,18 +557,27 @@ li {
   .site-nav .mobile-menu .item-contact:not(:last-child) {
     margin-bottom: 16px;
   }
+  .site-nav .mobile-menu .pages {
+    height: 200px;
+  }
   .site-nav .mobile-menu .pages .item {
     margin-bottom: 40px;
   }
   .site-nav .mobile-menu .pages .item:last-child {
     margin-bottom: 60px;
   }
+  .site-nav .mobile-menu .contacts {
+    height: 58px;
+  }
 }
 
 @media screen and (min-width: 768px) {
+  .site-nav .pages .link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
   .site-nav .conteiners {
     width: 768px;
-    padding-top: 21px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -690,11 +722,13 @@ li {
 }
 
 .hero .title {
+  font-family: Roboto,sans-serif;
   max-width: 696px;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 30px;
   color: #ffffff;
+  width: 360px;
   font-weight: 900;
   font-size: 26px;
   line-height: 1.615;
@@ -1255,6 +1289,11 @@ li {
   .footer .contact-info {
     display: block;
     margin-right: 80px;
+  }
+  .footer .contact-info address {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 

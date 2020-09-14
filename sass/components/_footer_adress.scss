@@ -57,13 +57,18 @@
 	
 /*футре - столбец адресов*/
 .footer {
+
 	.logo{
 		font-size: 26px;
 		line-height: 1.192;
 	}
 	.contact-info {		
 	   display: block;
-	   margin-right:80px ;
+	   margin-right:80px;
+		address{
+			align-items: flex-start;
+		}
+
 	}
 }
 	 
